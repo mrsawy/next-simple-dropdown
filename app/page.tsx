@@ -51,12 +51,14 @@ export default function Home() {
             options={parentCategories}
             onChange={changeParentCategoryHandler}
             selected={selectedParentCategory}
+            labelName={`Main categories`}
           />
           <CustomDropdown
             options={childCategories}
             onChange={changeChildCategoryHandler}
             selected={selectedChildCategory}
             skeleton={false}
+            labelName={`Sub categories`}
           />
         </>
       )}
